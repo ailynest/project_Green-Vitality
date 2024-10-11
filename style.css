@@ -1,0 +1,140 @@
+/*estilo general*/
+body{
+    font-family: Arial, sans-serif;
+    background-color: #FCF8F3;
+    margin-left:0;
+    margin-right: 0;
+}
+
+/*estilo encabezado*/
+header {
+    /*background: rgba(41, 123, 90, 0.57);*/
+    background-image: url(images/fondo.jpg);
+    /*background-image: url(https://img.freepik.com/vector-gratis/fondo-borde-transparente-dia-patricks-monton-trebol-verde_333792-56.jpg);*/
+    height: 100px;
+    width: 100%;     /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0;         /* Posicionamos la cabecera al lado izquierdo */
+    top: 0;          /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+.header-flex-container{
+    display: flex;
+    justify-content: center; /*eje principal*/
+    align-items:center; /*eje secundario*/
+    flex-wrap: nowrap; /*permite el salto de linea*/
+    /*flex-wrap: wrap; /*permite el salto de linea*/
+    /*flex-shrink: 3;*/
+}
+
+div a{
+    text-decoration: none;
+    color: white;
+}
+
+.item-logo{
+    padding: 1%;
+    margin: 3px;
+    width: 50px;
+ }
+ 
+.item1{
+    padding: 1%;
+    margin: 3px;
+    color: white;
+    flex-grow: 4;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+.item{
+    padding: 1%;
+    margin: 3px;
+    margin-right: 1%;
+    /*transition: color 0.3s;*/
+}
+.icon {
+    width: 32px;
+    height: 32px;
+}
+.item:hover{
+    color: #2a3c0f;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+/*NAVEGADOR*/
+.nav-flex-container{
+    display: flex;
+    /*background-color: rgba(41, 123, 90, 0.57);*/
+    background-color:#397914;
+    /*flex-direction: ; ►por defecto horizontal y si pongo column entonces me cambia la dirección a columnas*/ 
+    justify-content: center; /*eje principal*/
+    align-items:center; /*eje secundario*/
+    flex-wrap: nowrap; /*permite el salto de linea*/
+}
+
+
+.elemento{
+    padding: 1%;
+    margin: 5px;
+}
+.elemento:hover{
+    /*background-color: #126952;*/
+    background-color:#a2cd63;
+}
+
+
+/*carrusel*/
+.banner {
+    padding-top: 0px;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.flex-viewport {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    /*transition: transform 0.5s ease-in-out;*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slide {
+    min-width: 100%; /* Cada imagen ocupa el 100% del ancho del carrusel */
+    box-sizing: border-box;
+}
+
+
+.slide img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el espacio de la slide */
+    height: 500px;
+
+}
+
+.slide-cont {
+    position: fixed;
+    bottom: 500px;
+    left: 20px;
+    background-color: grey;
+    padding: 10px;
+}
+
+.productos {
+    margin-top: 800px;
+    position: fixed;
+}
+.blog {
+    margin-top: 1200px;
+    position: fixed;
+}
