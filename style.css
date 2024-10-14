@@ -1,9 +1,9 @@
 /*estilo general*/
 body{
     font-family: Arial, sans-serif;
-    background-color: #FCF8F3;
-    margin-left:0;
-    margin-right: 0;
+    /*background-color: #FCF8F3;*/
+    margin:0;
+    padding: 0;
 }
 
 /*estilo encabezado*/
@@ -101,15 +101,15 @@ header ul{
 /*carrusel*/
 .banner {
     padding-top: 0px;
-    position: relative;
     max-width: 100%;
-    margin: 0 auto;
+    /*position: relative;
+    margin: 0 auto;*/
     overflow: hidden;
 }
 
 .flex-viewport {
     width: 100%;
-    position: relative;
+    /*position: relative;*/
     overflow: hidden;
 }
 
