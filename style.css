@@ -15,8 +15,7 @@ header {
     width: 100%;     /* hacemos que la cabecera ocupe el ancho completo de la página */
     left: 0;         /* Posicionamos la cabecera al lado izquierdo */
     top: 0;          /* Posicionamos la cabecera pegada arriba */
-    position:fixed;
-    z-index: 1000;
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
 }
 
 .header-flex-container{
@@ -55,21 +54,17 @@ header .item{
 .icon {
     width: 32px;
     height: 32px;
-    transition: color 0.3s;
 }
-
-.icon:hover{
-    transform: scale(1.15);
-}
-
-.text:hover{
-    color: #397914;
+.item:hover{
+    color: #2a3c0f;
 }
 
 header ul{
     list-style: none;
     text-align: center;
 }
+
+
 
 /*NAVEGADOR*/
 .nav-flex-container{
