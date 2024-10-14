@@ -16,6 +16,7 @@ header {
     left: 0;         /* Posicionamos la cabecera al lado izquierdo */
     top: 0;          /* Posicionamos la cabecera pegada arriba */
     position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index:1000;
 }
 
 .header-flex-container{
@@ -47,23 +48,30 @@ div a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 .item{
-    padding: 1%;
-    margin: 3px;
+    /*padding: 1%;
+    margin: 3px;*/
     margin-right: 1%;
     /*transition: color 0.3s;*/
 }
 .icon {
     width: 32px;
     height: 32px;
+    transition: transform 0.3s;
 }
-.item:hover{
-    color: #2a3c0f;
+.icon:hover{
+    transform: scale(1.15);
+}
+
+.text:hover{
+    color: #397914;
 }
 
 ul{
     list-style: none;
     text-align: center;
 }
+
+
 
 /*NAVEGADOR*/
 .nav-flex-container{
