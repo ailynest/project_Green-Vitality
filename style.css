@@ -15,8 +15,8 @@ header {
     width: 100%;     /* hacemos que la cabecera ocupe el ancho completo de la página */
     left: 0;         /* Posicionamos la cabecera al lado izquierdo */
     top: 0;          /* Posicionamos la cabecera pegada arriba */
-    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
-    z-index:1000;
+    position:fixed;
+    z-index: 1000;
 }
 
 .header-flex-container{
@@ -32,13 +32,11 @@ div a{
     text-decoration: none;
     color: white;
 }
-
 .item-logo{
     padding: 1%;
     margin: 3px;
     width: 50px;
- }
- 
+}
 .item1{
     padding: 1%;
     margin: 3px;
@@ -47,7 +45,8 @@ div a{
     font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
-.item{
+
+header .item{
     /*padding: 1%;
     margin: 3px;*/
     margin-right: 1%;
@@ -60,13 +59,18 @@ div a{
 }
 .icon:hover{
     transform: scale(1.15);
+    transition: color 0.3s;
+}
+
+.icon:hover{
+    transform: scale(1.15);
 }
 
 .text:hover{
     color: #397914;
 }
 
-ul{
+header ul{
     list-style: none;
     text-align: center;
 }
@@ -83,7 +87,6 @@ ul{
     align-items:center; /*eje secundario*/
     flex-wrap: nowrap; /*permite el salto de linea*/
 }
-
 
 .elemento{
     padding: 1%;
@@ -136,13 +139,4 @@ ul{
     left: 20px;
     background-color: grey;
     padding: 10px;
-}
-
-.productos {
-    margin-top: 800px;
-    position: fixed;
-}
-.blog {
-    margin-top: 1200px;
-    position: fixed;
 }
