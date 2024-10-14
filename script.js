@@ -1,3 +1,4 @@
+//HEADER
 let currentIndex = 1;
 const slidesContainer = document.querySelector('.slides');
 const slides = document.querySelectorAll('.slide');
@@ -31,3 +32,25 @@ function nextSlide() {
 
 // Desliza cada 3 segundos
 setInterval(nextSlide, 5000);
+
+
+//BODY
+
+let indiceActual = 0;
+const contenido = document.querySelector('.carrusel-contenido');
+const puntos = document.querySelectorAll('.punto');
+
+function mostrarCarrusel(indice) {
+    indiceActual = indice;
+    contenido.style.transform = `translateX(-${indice * 100}%)`;
+    actualizarPuntos();
+}
+
+function actualizarPuntos() {
+    puntos.forEach((punto, index) => {
+        punto.classList.toggle('active', index === indiceActual);
+    });
+}
+
+// Inicializa el carrusel
+mostrarCarrusel(indiceActual);
