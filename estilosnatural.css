@@ -1,0 +1,244 @@
+/*estilos.css*/
+
+/*el padding y el border formarán parte del cálculo de ancho de la caja, para calcular fácil*/
+/*html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }*/
+/**/
+
+main {
+    margin-top: 100px;
+}
+
+h2 {
+    margin-left: 5%;
+}
+
+/*CINTURÓN CARACTERÍSTICAS*/
+
+#caracteristicas {
+    display:flex;
+    flex-direction:row;
+    /*justify-content: space-between;*/
+    flex-grow:1;
+    background-color: rgb(255, 242, 225);
+}
+
+#caracteristicas img {
+    width:80px;
+    height: 80px;
+}
+
+#caracteristicas figure {
+    margin: 45px 100px 45px 100px;
+    text-align: center;
+    color: #A2CD63;
+}
+
+/*CARRUSEL PRODUCTOS*/
+
+.carrusel-productos {
+    position: relative;
+    width: 80%;
+    margin: auto; /*centra el carrusel*/
+    overflow: hidden;
+}
+
+.carrusel-contenido {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.producto {
+    min-width: 33.33%;
+    box-sizing:border-box;
+    overflow: hidden; /*Asegura que el contenido no se desborde*/
+    position: relative; /*Para posicionar el texto*/
+}
+
+.producto img {
+    width:100%;
+    display:block;
+    /*height:auto; /*Mantiene la proporción de la imagen*/
+    height: 200px;
+    /*object-fit:cover; /*Ajusta la imagen para que llene el contenedor sin distorsionarse*/
+    object-fit:contain; /*mantiene la imagen completa sin cortarla*/
+}
+
+.texto-producto {
+    position: absolute; /*quedará encima de la imagen*/
+    bottom: 10px; /*posición desde el fondo*/
+    /*left: 10px; /*Posición desde la izquierda*/
+    margin:3px;
+    color: white; /*Color del texto*/
+    background-color: #254d0e80; /*fondo semitransparente*/
+    padding: 5px;                   /*tomo el color del footer: #254d0e* le añado 80 para dar 50% de opacidad/
+    border-radius: 5px;             /*00=completamente transparente / FF= completamente opaco*/
+    text-align:center;
+}
+
+.texto-producto a {
+    text-decoration: none;
+    color: white;  
+}
+            /*efecto visual del texto de los productos*/
+.texto-producto:hover {
+    background-color:#A2CD63; /*Cambia el color de fondo*/
+    transform: scale(1.05); /*Aumenta un poco el tamaño*/
+}
+
+.navegacion {
+    text-align:center;
+    margin-top:10px;
+}
+
+.punto {
+    display:inline-block;
+    width:10px;
+    height: 10px;
+    background-color: gray;
+    border-radius:50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.punto.active {
+    background-color: black;
+}
+
+/*ENTRADAS BLOG*/
+
+#blog {
+    display:flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around; /*Espacio entre los elementos*/
+    padding: 20px;
+    flex-wrap: wrap; /*los elementos se acomodan en varias líneas si es necesario*/
+    justify-content: center;
+    /*max-width: 1000px;*/
+    width: 100%;
+    border-top: #126952;  
+}
+
+main .item {
+    flex-grow: 1; /*crece proporcionalmente*/
+    background-color: rgb(252, 252, 252);
+    text-align:center; /*centra el texto*/
+    margin: 10px; /*espacio alrededor de cada item*/
+    width: 20%;
+    height: 20%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden; /*oculta cualquier contenido que se desborde*/
+    min-width: 200px;
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves del efecto del ratón*/
+}
+
+/*efecto al pasar el ratón*/
+main .item:hover {
+    background-color:#A2CD63; /*Cambia el color de fondo*/
+    transform: scale(1.05); /*Aumenta un poco el tamaño*/
+}
+
+#blog img {  /*las imagenes dentro de blog, para evitar influencias*/
+    max-width: 100%; /*asegura que la imagen no exceda el contenedor*/
+    border-radius: 8px;
+    width: 100%; /*Hace que la imagen ocupe todo el ancho del contenedor*/
+    height: 250px; /*establece una algura fija para la imagen*/
+    object-fit: cover; /*mantiene la relación de aspecto y recorta si es necesario*/
+}
+
+.nombre-articulo {
+    margin-top:10px; /*espacio entre la imagen y el texto*/
+    margin-bottom: 10px;
+    overflow-wrap: break-word; /*permite que parta las palabras si hace falta según pantalla*/
+    padding: 5px;
+}
+
+#blog a {
+    text-decoration: none;
+    color: black;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #254d0e;
+    color: white;
+    padding: 15px;
+    margin-top: 35px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.lista-footer {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    /*display: inline;*/ /*Para que el texto quede alineado con los iconos*/
+    margin: 0 15px;
+}
+
+footer p {
+    margin: 0 15px;
+}
+
+.columna ul li:hover { /*los elementos de las columnas del footer*/
+    /*background:#126952;*/ /*color al que cambia al pasar por encima*/
+    color: #A2CD63;
+}
+
+.columna {
+    display:flex;
+    flex-direction:column;    
+    justify-content: flex-start;
+}
+.columna h3 {
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+.columna ul {
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
+
+.texto-columnas {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-inferior {
+    text-align:center;
+}
+
+.icono-social {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: inline;
+    transition: transform 0.3s; /*suaviza el efecto al hacer hover*/
+}
+
+.icono-social:hover {
+    transform: scale(1.15); /*Aumenta un poco el tamaño*/
+}
+
+.lista-social {
+    display:inline;
+}
+
+
+https://webdesign.tutsplus.com/create-a-css-grid-image-gallery-with-blur-effect-and-interaction-media-queries--cms-32287t
+imagenes que al pasar por encima se difumina y aparece texto
