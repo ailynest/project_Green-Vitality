@@ -168,7 +168,7 @@ main .item:hover {
 footer {
     background-color: #254d0e;
     color: white;
-    padding: 15px;
+    /*padding: 15px;*/
     margin-top: 35px;
 }
 

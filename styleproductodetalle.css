@@ -1,0 +1,185 @@
+
+.detalleproducto {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center; /*eje principal*/
+    align-items:space-around; /*eje secundario*/
+    flex-wrap: nowrap; /*permite el salto de linea*/    
+
+}
+
+
+/*ZOOM IMAGEN*/
+    /*img:hover {
+        /*transform: scale(1.2); /*Aumenta un poco el tamaño
+        cursor: pointer;
+        cursor: zoom-out;
+    }
+    */
+    
+    .contenedor-imagen {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        overflow: hidden; /* Oculta el resto de la imagen */
+    }
+
+    .contenedor-imagen img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.2s ease-out;
+    }
+
+    /* Efecto de zoom */
+    .contenedor-imagen:hover img {
+        transform: scale(1.3); /* Ajusta el nivel de zoom, en este caso es 2x */
+    }
+
+    /* Mover la imagen al hacer hover */
+    .contenedor-imagen:hover {
+        cursor: zoom-in;
+    }
+
+    /* Para el efecto de lupa en la posición del ratón */
+    .contenedor-imagen:hover img {
+        transform-origin: center; /* Centra el zoom en la imagen */
+    }
+
+/*TEXTO DESCRIPCION*/
+    .descripcion {
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: justify;
+    }
+
+    .texto-producto-detalle {
+        position: relative; /*quedará encima de la imagen*/
+        bottom: 10px; /*posición desde el fondo*/
+        margin:10px;
+        color: white; /*Color del texto*/
+        background-color: #254d0e80; /*fondo semitransparente*/
+        padding: 5px;                  
+        text-align:center;
+    }
+
+    .texto-producto-detalle a {
+        text-decoration: none;
+        color: white;  
+    }
+                /*efecto visual del texto de los productos*/
+    .texto-producto-detalle:hover {
+        background-color:#A2CD63; /*Cambia el color de fondo*/
+        transform: scale(1.05); /*Aumenta un poco el tamaño*/
+    }
+
+/*VALORACION-COMENTARIOS*/
+h2{
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+
+/* Para mostrar la valoración promedio */
+.valoracion-promedio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.rating-stars {
+    background-image: url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp);
+    width: 5.45em
+}
+
+.rating-stars {
+    background-position: 0,1.1em,2.2em,3.3em,4.4em;
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
+    height: 1em
+}
+
+.comentarios-lista {
+    display: flex;
+    justify-content: space-around; /*eje principal*/
+    align-items:center; /*eje secundario*/
+    flex-wrap: nowrap; /*permite el salto de linea*/
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.comentarios-lista li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.starfilled {
+    width: 80%
+}
+
+.general-average__text {
+    font-size: 1rem;
+    line-height: 1.35;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%
+}
+
+.valoracion-promedio strong {
+    color: #ffcc00;
+    margin-left: 5px;
+}
+
+.comentarios {
+    margin-top: 20px;
+    max-width: 500px;
+    margin:auto;
+}
+
+.comentarios textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.comentarios button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.comentarios button:hover {
+    background-color: #45a049;
+}
+
+.rating {
+    display: flex;
+    direction: row-reverse;
+    justify-content: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label {
+    color: gold;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
