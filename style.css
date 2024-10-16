@@ -91,8 +91,8 @@ header ul{
 .banner {
     padding-top: 0px;
     max-width: 100%;
-    /*position: relative;
-    margin: 0 auto;*/
+    position: relative;
+    margin: 0 auto;
     overflow: hidden;
 }
 

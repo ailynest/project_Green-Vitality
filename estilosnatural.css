@@ -75,7 +75,7 @@ h2 {
     margin:3px;
     color: white; /*Color del texto*/
     background-color: #254d0e80; /*fondo semitransparente*/
-    padding: 5px;                   /*tomo el color del footer: #254d0e* le añado 80 para dar 50% de opacidad/
+    padding: 5px;                   /*tomo el color del footer: #254d0e* le añado 80 para dar 50% de opacidad*/
     border-radius: 5px;             /*00=completamente transparente / FF= completamente opaco*/
     text-align:center;
 }
@@ -239,6 +239,3 @@ footer p {
     display:inline;
 }
 
-
-https://webdesign.tutsplus.com/create-a-css-grid-image-gallery-with-blur-effect-and-interaction-media-queries--cms-32287t
-imagenes que al pasar por encima se difumina y aparece texto
