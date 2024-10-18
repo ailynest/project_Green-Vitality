@@ -81,23 +81,69 @@ h2{
 
 /* Para mostrar la valoración promedio */
 .valoracion-promedio {
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:space-between; 
+    flex-wrap: nowrap;  
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin-top: 10px;*/
+
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    position: relative;
+    text-align: center
+}
+
+.general-average {
+    align-items: center;
+    color: #202020;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    justify-content: center;
+    margin: auto
 }
 
 .rating-stars {
-    background-image: url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp);
-    width: 5.45em
-}
-
-.rating-stars {
+    /*background-image: url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp);*/
+    background-image: url(images/start-to-fill.png),
+    url(images/start-to-fill.png),
+    url(images/start-to-fill.png),
+    url(images/start-to-fill.png),
+    url(images/start-to-fill.png);
     background-position: 0,1.1em,2.2em,3.3em,4.4em;
     background-repeat: no-repeat;
     background-size: 1em 1em;
-    height: 1em
+    display: inline-table;
+    height: 1em;
+    margin-right: 10px;
+    width: 5.45em
+}
+
+/*.valoracion-promedio strong {
+    color: #ffcc00;
+    margin-left: 5px;
+}*/
+
+.starfilled {
+    color: #ffcc00;
+    width: 80%;
+}
+
+.average-number {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.general-average__text {
+    font-size: 1rem;
+    line-height: 1.35;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .comentarios-lista {
@@ -117,21 +163,14 @@ h2{
     border-radius: 5px;
 }
 
-.starfilled {
-    width: 80%
-}
-
-.general-average__text {
-    font-size: 1rem;
-    line-height: 1.35;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    width: 100%
-}
-
-.valoracion-promedio strong {
-    color: #ffcc00;
-    margin-left: 5px;
+.general-average {
+    align-items: center;
+    color: #202020;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    justify-content: center;
+    margin: auto
 }
 
 .comentarios {
