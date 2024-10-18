@@ -1,19 +1,8 @@
-/*estilos.css*/
-
-/*el padding y el border formarán parte del cálculo de ancho de la caja, para calcular fácil*/
-/*html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }*/
-/**/
-
-main {
+#main-index {
     margin-top: 100px;
 }
 
-h2 {
+#main-index h2 {
     margin-left: 5%;
 }
 
@@ -111,6 +100,10 @@ h2 {
 
 /*ENTRADAS BLOG*/
 
+#seccion-blog {
+    margin-top: 100px;
+}
+
 #blog {
     display:flex;
     background-color: rgb(255, 255, 255);
@@ -119,11 +112,10 @@ h2 {
     flex-wrap: wrap; /*los elementos se acomodan en varias líneas si es necesario*/
     justify-content: center;
     /*max-width: 1000px;*/
-    width: 100%;
-    border-top: #126952;  
+    width: 100%; 
 }
 
-main .item {
+#main-index .item {
     flex-grow: 1; /*crece proporcionalmente*/
     background-color: rgb(252, 252, 252);
     text-align:center; /*centra el texto*/
@@ -138,7 +130,7 @@ main .item {
 }
 
 /*efecto al pasar el ratón*/
-main .item:hover {
+#main-index .item:hover {
     background-color:#A2CD63; /*Cambia el color de fondo*/
     transform: scale(1.05); /*Aumenta un poco el tamaño*/
 }
@@ -239,3 +231,68 @@ footer p {
     display:inline;
 }
 
+/***NOSOTROS***/
+
+#texto-nosotros {
+    margin-top: 220px;
+    margin-bottom: 100px;
+}
+
+#titulo-nosotros {
+    color:#4a7836;
+    text-align: center;
+    font-size: 36px;
+
+}
+
+#texto-nosotros h3 {
+    color:#6ab04c;
+    font-size: 25px
+}
+
+.tira-imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.tira-imagenes img {
+    width: 280px;
+    height: 180px;
+    border-radius: 8px;
+    border:solid #4a7836;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+}   /*0(sin desplazamiento horizontal) 4 (despl vertical)
+    20 difuminado (cuanto más valor, más difusa)
+    rgba color negro y 50% opacidad*/
+
+#texto-nosotros p {
+    text-align:justify
+}
+
+#texto-nosotros article {
+    margin: 50px;
+}
+
+#contacta-numero {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#telefono-numero {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#telefono {
+    font-size: 30px;
+    text-align: center;
+    color:#482d10;
+}
+
+#telefono-numero img {
+    width:50px;
+    height: 50px;
+    margin-right: 20px;
+}
