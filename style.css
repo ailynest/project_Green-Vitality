@@ -32,7 +32,7 @@ header {
     /*flex-shrink: 3;*/
 }
 
-div a{
+header div a{
     text-decoration: none;
     color: white;
 }
@@ -140,9 +140,14 @@ header ul{
 }
 
 .slide-cont {
-    position: fixed;
-    bottom: 500px;
-    left: 20px;
-    background-color: grey;
+    /*position: fixed;
+    bottom: 100px;*/
+    margin-left: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(163, 161, 161, 0.5);
     padding: 10px;
+    font-size: 50px;
+    font-family: fangsong;
+    color: whitesmoke;  
+    text-wrap: nowrap;
 }
