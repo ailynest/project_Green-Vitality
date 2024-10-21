@@ -106,35 +106,28 @@ h2{
     margin: auto
 }
 
-.rating-stars {
-    /*background-image: url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp);*/
-    background-image: url(images/start-to-fill.png),
-    url(images/start-to-fill.png),
-    url(images/start-to-fill.png),
-    url(images/start-to-fill.png),
-    url(images/start-to-fill.png);
-    background-position: 0,1.1em,2.2em,3.3em,4.4em;
-    background-repeat: no-repeat;
-    background-size: 1em 1em;
-    display: inline-table;
-    height: 1em;
-    margin-right: 10px;
-    width: 5.45em
-}
 
-/*.valoracion-promedio strong {
-    color: #ffcc00;
-    margin-left: 5px;
-}*/
+ /*3ro intento okkkk*/
+.rating-stars {
+    font-size: 2rem;  /* Tamaño de las estrellas */
+    color: lightgray;  /* Color de las estrellas vacías */
+    position: relative;
+    display: inline-block;
+}
 
 .starfilled {
-    color: #ffcc00;
-    width: 80%;
+    color: gold;  /* Color dorado de las estrellas llenas */
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
 
+
 .average-number {
-    font-size: 22px;
+    font-size: 2rem; /*22px;*/
     font-weight: 600;
+    margin: 10px
 }
 
 .general-average__text {
@@ -161,16 +154,6 @@ h2{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-.general-average {
-    align-items: center;
-    color: #202020;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 25px;
-    justify-content: center;
-    margin: auto
 }
 
 .comentarios {
@@ -222,3 +205,4 @@ h2{
     color: gold;
 }
 
+-->
