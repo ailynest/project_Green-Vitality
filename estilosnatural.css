@@ -108,7 +108,6 @@
     display:flex;
     background-color: rgb(255, 255, 255);
     justify-content: space-around; /*Espacio entre los elementos*/
-    padding: 20px;
     flex-wrap: wrap; /*los elementos se acomodan en varias líneas si es necesario*/
     justify-content: center;
     /*max-width: 1000px;*/
@@ -242,7 +241,6 @@ footer p {
     color:#4a7836;
     text-align: center;
     font-size: 36px;
-
 }
 
 #texto-nosotros h3 {
