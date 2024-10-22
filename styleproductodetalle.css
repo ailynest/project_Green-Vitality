@@ -81,23 +81,62 @@ h2{
 
 /* Para mostrar la valoración promedio */
 .valoracion-promedio {
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:space-between; 
+    flex-wrap: nowrap;  
     font-size: 1.2rem;
+    margin-top: 10px;*/
+
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    position: relative;
+    text-align: center
+}
+
+.general-average {
+    align-items: center;
+    color: #202020;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    justify-content: center;
+    margin: auto
+}
+
+
+ /*3ro intento okkkk*/
+.rating-stars {
+    font-size: 2rem;  /* Tamaño de las estrellas */
+    color: lightgray;  /* Color de las estrellas vacías */
+    position: relative;
+    display: inline-block;
+}
+
+.starfilled {
+    color: gold;  /* Color dorado de las estrellas llenas */
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+.average-number {
+    font-size: 2rem; /*22px;*/
+    font-weight: 600;
+    margin: 10px
+}
+
+.general-average__text {
+    font-size: 1rem;
+    line-height: 1.35;
+    margin-bottom: 20px;
     margin-top: 10px;
-}
-
-.rating-stars {
-    background-image: url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp),url(images/ico-star-full.webp);
-    width: 5.45em
-}
-
-.rating-stars {
-    background-position: 0,1.1em,2.2em,3.3em,4.4em;
-    background-repeat: no-repeat;
-    background-size: 1em 1em;
-    height: 1em
+    width: 100%;
+    text-align: center;
 }
 
 .comentarios-lista {
@@ -115,23 +154,6 @@ h2{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-.starfilled {
-    width: 80%
-}
-
-.general-average__text {
-    font-size: 1rem;
-    line-height: 1.35;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    width: 100%
-}
-
-.valoracion-promedio strong {
-    color: #ffcc00;
-    margin-left: 5px;
 }
 
 .comentarios {
@@ -183,3 +205,4 @@ h2{
     color: gold;
 }
 
+-->

@@ -1,92 +1,105 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e9f5e9;
-    color: #333;
-}
+        /*BLOG*/
 
-header {
-    background: #6ab04c;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.navegador-lateral {
+#navegacion-blog {
     display:flex;
+    /*background-color: rgb(255, 255, 255);*/
+    justify-content: space-around; /*Espacio entre los elementos*/
+    flex-wrap: wrap; /*los elementos se acomodan en varias líneas si es necesario*/
+    justify-content: center;
+    width: 100%; 
+    margin-top: 230px;
 }
 
-aside {
-    width:200px; /*ancho del menú lateral*/
-    background: #6ab04c;
-    color: #fff;
-    padding: 20px;
-    margin-right: 35px;
+.tema {
+    display:flex;
+    text-align:center; /*centra el texto*/
+    margin: 10px; /*espacio alrededor de cada item*/
+    width: 20%;
+    height: auto;
+    /*border: 1px solid #ccc;*/
     border-radius: 8px;
+    overflow: hidden; /*oculta cualquier contenido que se desborde*/
+    min-width: 200px;
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves del efecto del ratón*/
+    align-items: center;
+    position: relative; /*Necesario para posicionar el texto*/
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-aside nav ul {
-    list-style: none;
-    padding: 0;
+#navegacion-blog img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;  /*mantiene la relación de aspecto y recorta si es necesario*/
+    width: 100%;
+    filter: sepia(0.5); /* Aplica un filtro sepia, se puede ajustar de 0 a 1 */
+
+    /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+}   /*0(sin desplazamiento horizontal) 4 (despl vertical)
+    20 difuminado (cuanto más valor, más difusa)
+    rgba color negro y 50% opacidad*/
+
+
+.texto-navegacion {
+    position:absolute;
+    top: 50%; /*Centra verticalmente*/
+    left: 50%; /*Centra horizontalmente*/
+    transform: translate(-50%, -50%); /* Ajusta la posición para que esté centrado */
+    color: #50483f; /* Color del texto */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2; /* Asegura de que el texto esté encima de la imagen */
+    background-color: rgba(243, 229, 171, 0.5); /* Fondo vainilla translúcido */
+    font-weight: bold;
 }
 
-aside nav ul li {
-    margin: 10px 0;
+.fondo-claro {
+    background-color: rgba(243, 229, 171, 0.2); /* Fondo vainilla translúcido */
+    box-shadow: 0 0 15px rgba(243, 229, 171, 0.5); /* difumina los bordes del fondo */
 }
 
-aside nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+.fondo-oscuro {
+    background-color: rgba(243, 229, 171, 0.8); /* Fondo vainilla translúcido */
 }
 
-aside nav ul li a:hover {
-    color: #257b1a; /* Color fuerte al pasar el ratón */
-}
-
-main {
-    padding: 20px;
-    /*max-width: 800px;*/
-    /*margin: auto;*/
-    flex: 1;/* Ocupa el resto del espacio */
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-}
-
-article {
+.article-blog {
     background: #fff;
-    padding: 20px;
+    padding: 50px;
     margin-bottom: 20px;
+    margin-right:5%;
+    margin-left:5%;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /*efecto sombra*/
-    border-left: 5px solid #6ab04c; /* Borde verde a la izquierda. queda bien?*/
+    /*border-left: 5px solid #6ab04c; /* Borde verde a la izquierda. queda bien?*/
 }
 
 .articulo-contenido {
     display: flex;
     align-items:center;
+    flex-wrap: wrap; /***no reacciona**/
 }
-
-.article-image {
+.imagen-articulo {
     max-width: 100%;/*asegura que la imagen no exceda el contenedor*/
-    width: 200px;
-    height: 200px;
+    width: 40%;
+    /*width: 200px;
+    height: 200px;*/
     object-fit: cover; /*mantiene la relación de aspecto y recorta si es necesario*/
     border-radius: 5px;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .articulo-texto {
     text-align:justify;
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
 }
 
-article h2 {
+.article-blog h2 {
     margin-top: 0;
 }
 
-article a {
+.article-blog a {
     display: inline-block;
     margin-top: 10px;
     color: #6ab04c;
@@ -94,16 +107,153 @@ article a {
     font-weight: bold; /*negrita*/
 }
 
-article a:hover {
+.article-blog a:hover {
     text-decoration: underline; /*subraya cuando paso el puntero*/
 }
 
-footer { /*a sustituir por el otro*/
-    text-align: center;
-    padding: 15px 0;
-    background: #6ab04c;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    /******ENTRADA BLOG******/
+
+    body {
+        background-color: #ced08a;
+    }
+    
+    .contenido {
+        margin: 15px;
+        margin-top: 185px;
+        padding: 20px;
+        padding-bottom: 50px;
+        background: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .contenido h2 {
+        text-align:center;
+        font-size: 40px;
+        margin-bottom: 45px;
+        /*color:#2e5b1b;*/ /*lo siguiente es añadido para foto de fondo*/
+        background-image: url(https://hifasdaterra.com/wp-content/uploads/2023/11/header-post-remedios-naturales-gripe.jpg);
+        padding:60px;
+        color:white;
+    }
+    
+    .contenido h3 {
+        color: #333;
+        border-bottom:  1px dotted #8c8b8b; /*subrayado con puntitos grises*/
+        margin-top: 80px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 35px;
+        scroll-margin-top: 200px; /*Ajusta el scrol desde el índice*/
+    }
+    
+    .contenido article h4 {
+        color:#497e32;;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    
+    .contenido h5 {
+        font-size: 20px;
+    }
+    
+    .article-image {
+        max-width: 100%;
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: auto; /*centra la imagen cuando hay display:block*/
+        margin-bottom: 50px;
+        margin-top: 50px;
+        border-radius:8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    }
+    
+    #articulo-unico {
+        flex: 3; /* Ocupa 3 partes del espacio */
+        margin-right: 20px; /* Espacio entre artículo y aside */
+    }
+    
+    #articulo-unico p {
+        text-align:justify;
+        overflow-wrap: break-word; /*Permite que las palabras largas se corten*/
+    }
+    
+    .hojas {
+        display:block;
+        margin: auto /*No reacciona*****************/
+    }
+    
+    #indice {
+        margin-top:40px;
+        margin-right:10%;
+        margin-left:10%;
+        margin-bottom: 50px;
+        background-color: rgb(255, 242, 225);
+        padding: 20px;
+    }
+    
+    #indice a {
+        text-decoration: none;
+        color: #126952;  
+    }
+    
+    #indice a:hover {
+        transition: font-weight 0.3s;  /* Suaviza la transición */
+        font-weight: bold; /* Cambia a negrita al pasar el ratón */
+    }
+    
+    #listado-cuidados li{
+        padding-bottom: 10px; /* Espacio debajo de cada elemento */
+        text-align:justify
+    }
+    
+    #aside-articulo figure:hover {
+        transition: font-weight 0.3s;  /* Suaviza la transición */
+        transform: scale(1.10); /*Aumenta un poco el tamaño*/
+        color: #126952
+    }
+    
+    #aside-articulo {
+        flex: 1; /* Ocupa 1 parte del espacio */
+        padding: 15px;
+        text-align:center;
+        margin-top:10%;
+        border-left:solid rgb(254, 232, 202);
+        border-top:solid rgb(254, 232, 202);
+        border:solid rgb(254, 232, 202); /****retirar lo que no interese de margen**/
+    }
+    
+    #aside-articulo img {
+        width: 100%;
+        max-width: 250px;
+        /*min-width:150px;*/ /*aumenta el tamaño pero ancha el aside*/
+    }
+    
+    #aside-articulo h4 {
+        color:#333;
+        background:rgb(254, 232, 202);
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    #aside-articulo figure {
+        background-color: white;
+        padding: 40px;
+    }
+    
+    #aside-articulo hr {
+        width: 75%;
+    }
+    
+    #aside-articulo a {
+        text-decoration: none;
+        color: black;  
+    }
+    
+    #aside-articulo figure:hover {
+        transform: scale(1.10); /*Aumenta un poco el tamaño*/
+        color: #126952
+    }
