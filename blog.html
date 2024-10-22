@@ -56,7 +56,7 @@
             </div>
             
         </header>
-            <nav>
+            <nav> <!--NAVEGACION-->
                 <div id="navegacion-blog">
                     <div class="tema">
                         <a href="entradablog.html">
@@ -91,12 +91,13 @@
                 </div>
             </nav>
         <main id="main-blog">
-            <div> <!--BLOQUE DERECHO: ENTRADAS BLOG-->
+            <div> <!--ENTRADAS BLOG-->
                 <article class="article-blog">
                     <div class="articulo-contenido">
                         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ozono-terapia.com%2Fwp-content%2Fuploads%2F2020%2F10%2Fresfriadogripe-scaled.jpg&f=1&nofb=1&ipt=38ccf7c38af19aaaa2f1c182221b1ded68ac7682e883125254f16689530b0bd3&ipo=images" alt="mujer resfirada" title="resfriado" class="imagen-articulo">
                         <div class="articulo-texto">
                             <h2>Combate los resfriados con fitoterapia</h2>
+                            <time datetime="2024-10-22">22 de octubre, 2024</time>
                             <p>Los remedios para el resfriado son casi tan comunes como el resfriado común,
                                 pero ¿son eficaces? Nada puede curar un resfriado. Pero algunos remedios pueden
                                 ayudar a aliviar sus síntomas y evitar que te sientas tan mal. Aquí te presentamos
@@ -110,6 +111,7 @@
                         <img src="https://es-share.upmc.com/wp-content/uploads/2022/01/Abdominal-Pain.jpg.webp" alt="Mujer con dolor digestivo" title="Dolor digestivo" class="imagen-articulo">
                         <div class="articulo-texto">
                             <h2>Dolor digestivo: cuándo preocuparse</h2>
+                            <time datetime="2024-10-18">18 de octubre, 2024</time>
                             <p>Todos experimentamos dolor de estómago u otros problemas gastrointestinales (GI) de vez en cuando. Muchas veces, estos pueden ser problemas menores que se resuelven
                                 con el tiempo. Sin embargo, <strong>si usted o un ser querido tienen dolor de estómago alarmante durante más de algunos días, es posible que sea momento de coordinar una 
                                 cita con su médico o con un gastroenterólogo.</strong></p>
@@ -122,6 +124,7 @@
                         <img src="https://www.laproeza.mx/blog/wp-content/uploads/2021/03/propoleo-1.jpg" alt="Menta" class="imagen-articulo">
                         <div class="articulo-texto">
                             <h2>Beneficios probados del propóleo y el polen</h2>
+                            <time datetime="2024-10-15">15 de octubre, 2024</time>
                             <p>Entre los muchos productos que nos ofrecen las abejas, el polen y el propóleo son de los más completos desde el 
                                 punto de vista nutricional. <strong>Su aporte en vitaminas, minerales y encimas, los convierten en sustancias beneficiosas 
                                 para nuestra salud y en auténticos aliados contra bacterias, hongos o infecciones.</strong></p>
@@ -130,6 +133,20 @@
                     </div>
                 </article>
             </div>
+            <form><!--FORMULARIO SUBSRIPCION-->
+                <h2>Suscríbete a nuestra Newsletter</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre" required maxlength="50">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required maxlength="50">
+                
+                <div class="proteccion-datos">
+                    <input type="checkbox" id="aceptar-terminos" name="agree_to_terms" value="1" required>
+                    <label for="aceptar-terminos">He leído y acepto la cláusula de información sobre <a href="https://www.aepd.es/">Protección de Datos</a></label>
+                </div> <!--el for del label y el id del input coinciden para que el clic en el texto del label seleccione el checkbox-->
+                <button type="submit">Suscribirse</button>
+            </form>
         </main>
         <footer>
             <div>

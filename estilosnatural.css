@@ -59,8 +59,10 @@
 
 .texto-producto {
     position: absolute; /*quedará encima de la imagen*/
-    bottom: 10px; /*posición desde el fondo*/
+    /*bottom: 10px; /*posición desde el fondo*
     /*left: 10px; /*Posición desde la izquierda*/
+    top: 65%; /*Centra verticalmente*/
+    left: 25%; /*Centra horizontalmente*/
     margin:3px;
     color: white; /*Color del texto*/
     background-color: #254d0e80; /*fondo semitransparente*/
@@ -94,7 +96,20 @@
     cursor: pointer;
 }
 
+.punto2 {
+    display:inline-block;
+    width:10px;
+    height: 10px;
+    background-color: gray;
+    border-radius:50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
 .punto.active {
+    background-color: black;
+}
+
+.punto2.active {
     background-color: black;
 }
 
