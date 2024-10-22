@@ -19,19 +19,20 @@
      /* Imágenes */
 .list-products {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: self-end;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.list-item {
+    width: 25%;
+    min-width: 24,5%;
 }
  h2 {
     width: 100%;
-    max-width: 200px;
-    border-radius: 10px;
     padding-inline: 100 px;
-    margin: 100 px;
+    padding: 20 px;
+ }
 
-}
 </style>
 </head>
 <body>
@@ -83,23 +84,57 @@
     </header>
     <main>
         <h1><strong>Complementos y suplementos alimenticios:</strong></h1>
-            <div class="list-products">
-                <div><h2>Complementos alimenticios:</h2></div>
-                    <img class="replace-2x img-responsive lazy img_0 img_1e" src="https://www.casapia.com/85914-home_default/barrita-proteica-praline-nutrisport-44-gramos.jpg" alt="Barrita Proteica Praliné - Nutrisport - 44 gramos" width="232" height="248">
-                <div><h2>Herbolario:</h2></div> 
-                    <img class="replace-2x img-responsive lazy img_0 img_1e" src="https://www.casapia.com/87752-home_default/linaza-semilla-dorada-casa-pia.jpg" alt="Linaza Semilla Dorada - Casa Pià" width="232" height="248">
-                <div><h2>Infusiones:</h2></div>
-                    <img class="replace-2x img-responsive lazy img_0 img_1e" src="https://www.casapia.com/84138-home_default/lata-happy-monsters-cha-cult-50-gramos.jpg" alt="Lata Happy Monsters - Cha Cult - 50 gramos" width="232" height="248">
-                <div><h2>Alimentación saludable:</h2></div>
-                    <img class="replace-2x img-responsive lazy img_0 img_1e" src="https://www.casapia.com/52319-home_default/lievibio-levadura-para-pan-y-pizza-bio-la-finestra-sul-cielo-9-gramos.jpg" alt="Lievibio Levadura para Pan y Pizza Bio - La Finestra Sul Cielo - 9 gramos" width="232" height="248">
-                <div><h2>Cosmética natural:</h2></div>
-                    <img class="replace-2x img-responsive lazy img_0 img_1e" src="https://www.casapia.com/84315-home_default/champu-reparador-regenerador-himalaya-herbals-400-ml.jpg" alt="Champú Reparador Regenerador - Himalaya Herbals - 400 ml" width="232" height="248">
-                <div><h2>Aromaterapia:</h2></div>
-                    <img class="replace-2x img-responsive lazy img_0 img_1e" src="https://www.casapia.com/80837-home_default/esencia-natural-jazmin-laboratorio-sys-12-ml.jpg" alt="Esencia Natural Jazmín - Laboratorio Sys - 12 ml" width="232" height="248"> 
-                <div><h2>Hogar:</h2></div>
-                    <img class="replace-2x img-responsive lazy img_0 img_1e" src="https://www.casapia.com/97260-home_default/tarro-de-cristal-con-tapon-de-corcho-cha-cult-300-ml.jpg" alt="Tarro de Cristal con Tapón de Corcho - Cha Cult - 300 ml" width="232" height="248">
-       </div>
-    </main>
+        <div class="list-products">
+            <div class="list-item">
+                <img src="//www.herbolariosaludnatural.com/21610-large/extracto-de-ginkgo-biloba-xxi-soria-natural-50-ml.jpg" alt="">
+                <h2>Extracto de Ginkgo 8,80 €</h2>
+            </div>
+            <div class="list-item">
+                <img src="https://www.herbolariosaludnatural.com/21054-large/extracto-de-propoleo-sotya-50-ml.jpg" alt=¨¨>
+                <h2>Extracto de propóleo 4,20 €</h2>
+            </div>
+            <div class="list-item"> 
+                <img src="https://www.herbolariosaludnatural.com/15721-large/crema-acido-hialuronico-armonia-50-ml.jpg" alt="">
+                <h2>Crema hialurónica 3,00 €</h2>
+            </div>
+            <div class="list-item">
+                <img src="https://www.herbolariosaludnatural.com/17440-large/rescue-night-pearls-bach-28-perlas.jpg" alt="">
+                <h2>Rescue night 10,80 €</h2>
+            </div>
+            <div class="list-item">
+                <img src="https://www.herbolariosaludnatural.com/9923-large/tibetan-tea-sabor-natural-90-bolsitas.jpg" alt="">
+                <h2>Tibetan tea 4,10€</h2>
+            </div>
+            <div class="list-item">
+                <img src="https://www.herbolariosaludnatural.com/14637-large/colageno-forte-pinisan-30-capsulas.jpg" alt="">
+                <h2>Colágeno forte 14,26 €</h2>
+            </div>
+            <div class="list-item">
+                <img src="https://www.herbolariosaludnatural.com/28220-large/sirope-de-savia-madal-bal-1-litro.jpg" alt="">
+                <h2>Sirope de savia 13,50 €</h2>
+            </div>
+            <div class="list-item">
+                <img src="https://www.herbolariosaludnatural.com/20126-large/inmuno-defens-jr-fs-cfn-500-ml.jpg" alt="">
+                <h2>Inmuno defens 17,46 €</h2>
+            </div>
+            <div class="list-item"> 
+                <img src="//www.herbolariosaludnatural.com/7226-large/defensas-naturales-yogi-tea-17-filtros.jpg" alt="">
+                <h2>Defensas naturales 3,69 €</h2>
+            </div>      
+            <div class="list-item">
+                <img src="//www.herbolariosaludnatural.com/20378-home/aceite-de-argan-ebers-20-ml.jpg" alt="">
+                <h2>Aceite de Argan 8,88 €</h2>
+            </div>
+            <div class="list-item">
+                <img src="//www.herbolariosaludnatural.com/25270-home/piedra-de-alumbre-aftershave-allo-nature-75-gramos.jpg" alt="">
+                <h2>Piedra de Alumbre 7,57 €</h2>
+            </div>
+            <div class="list-item">
+                <img src="//www.herbolariosaludnatural.com/31578-home/pastilla-de-jabon-para-afeitado-essabo-120-gramos.jpg" alt="">
+                <h2>Pastilla jabón afeitado 4,95 €</h2>
+            </div>
+         </div>
+     </main>
        <footer>
        <div>
         <div class="texto-columnas">
