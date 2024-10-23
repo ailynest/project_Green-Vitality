@@ -180,29 +180,31 @@ h2{
     background-color: #45a049;
 }
 
+-->
 .rating {
     display: flex;
-    direction: row-reverse;
-    justify-content: center;
+    justify-content: center; /* Alinea las estrellas en el centro */
+    /*direction: row-reverse;*/
+    flex-direction: row-reverse;
 }
 
 .rating input {
-    display: none;
+    display: none; /* Ocultamos los botones de radio */
 }
 
 .rating label {
-    font-size: 2rem;
-    color: lightgray;
-    cursor: pointer;
+    font-size: 2rem; /* Tamaño de las estrellas */
+    color: lightgray; /* Color inicial (vacío) de las estrellas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la estrella */
 }
 
+/* Estrellas doradas cuando están seleccionadas */
 .rating input:checked ~ label {
     color: gold;
 }
 
+/* Estrellas doradas al pasar el cursor sobre ellas */
 .rating label:hover,
 .rating label:hover ~ label {
     color: gold;
 }
-
--->
