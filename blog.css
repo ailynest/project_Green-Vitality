@@ -1,5 +1,24 @@
         /*BLOG*/
 
+#titulo-blog {
+    margin-top: 200px;
+    text-align:center;
+    background-image: url(https://staticnew-prod.topdoctors.mx/files/Image/large/8903c9459c28e402badc47fa13468d34.jpg) ;
+    color: #e3e69f;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /*sombra de texto para que se vea mejor*/
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 40px
+}
+
+#zona-nav-blog h2 {
+    margin-left: 40px;
+    display:block;
+    text-align:center;
+}
+
 #navegacion-blog {
     display:flex;
     /*background-color: rgb(255, 255, 255);*/
@@ -7,12 +26,13 @@
     flex-wrap: wrap; /*los elementos se acomodan en varias líneas si es necesario*/
     justify-content: center;
     width: relative;
-    margin-top: 230px;
-    background-color: #254d0e;
+    background-color:#FFFFFF;/*#254d0e;*/
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 40px;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -33,12 +53,12 @@
 }
 
 #navegacion-blog img {
+    display:block; /*Para que no sobresalga el contenedor*/
     width: 150px;
     height: 150px;
     border-radius: 8px;
     object-fit: cover;  /*mantiene la relación de aspecto y recorta si es necesario*/
     width: 100%;
-    filter: sepia(0.5); /* Aplica un filtro sepia, se puede ajustar de 0 a 1 */
     transition: filter 0.3s, transform 0.3s; /* Transiciones suaves del efecto del ratón*/
     /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
 }   /*0(sin desplazamiento horizontal) 4 (despl vertical)
@@ -46,7 +66,7 @@
     rgba color negro y 50% opacidad*/
 
 #navegacion-blog img:hover {
-    filter: sepia(0);
+    filter: sepia(0.5); /* Aplica un filtro sepia, se puede ajustar de 0 a 1 */
 }
 
 .texto-navegacion {
@@ -71,6 +91,10 @@
 
 .fondo-oscuro {
     background-color: rgba(243, 229, 171, 0.8); /* Fondo vainilla translúcido */
+}
+
+#titulo-posts {
+    text-align:center;
 }
 
 .article-blog {
@@ -124,6 +148,12 @@ time {
 
 .article-blog a:hover {
     text-decoration: underline; /*subraya cuando paso el puntero*/
+}
+
+/*RUTAS DE NAVEGACION*/
+
+.ruta-nav {
+    margin-top: 15px;
 }
 
 /*FORMULARIO*/
@@ -197,9 +227,12 @@ button:hover {
         background-color: #ced08a;
     }
     
+    #main-resfriado{
+        margin-top: 185px;
+    }
+
     .contenido {
         margin: 15px;
-        margin-top: 185px;
         padding: 20px;
         padding-bottom: 50px;
         background: #fff;
@@ -230,9 +263,10 @@ button:hover {
     }
     
     .contenido article h4 {
-        color:#497e32;;
+        color:#497e32;
         font-size: 30px;
         margin-top: 50px;
+        text-align:center
     }
     
     .contenido h5 {
@@ -250,6 +284,14 @@ button:hover {
         border-radius:8px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
     }
+
+    .img-remedio {
+        width:200px;
+        border-radius: 100px;
+        display:block;
+        margin: auto;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    }
     
     #articulo-unico {
         flex: 3; /* Ocupa 3 partes del espacio */
@@ -260,12 +302,11 @@ button:hover {
         text-align:justify;
         overflow-wrap: break-word; /*Permite que las palabras largas se corten*/
     }
-    
-    .hojas {
-        display:block;
-        margin: auto /*No reacciona*****************/
+
+    .element {
+        display: block;
     }
-    
+
     #indice {
         margin-top:40px;
         margin-right:10%;
@@ -301,9 +342,7 @@ button:hover {
         padding: 15px;
         text-align:center;
         margin-top:10%;
-        border-left:solid rgb(254, 232, 202);
-        border-top:solid rgb(254, 232, 202);
-        border:solid rgb(254, 232, 202); /****retirar lo que no interese de margen**/
+        border:solid #e78c3e;
     }
     
     #aside-articulo img {
@@ -312,6 +351,15 @@ button:hover {
         /*min-width:150px;*/ /*aumenta el tamaño pero ancha el aside*/
     }
     
+    span {
+        display:block;
+        text-align:center;
+        background-color: #e78c3e;
+        color:white;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
     #aside-articulo h4 {
         color:#333;
         background:rgb(254, 232, 202);
@@ -321,7 +369,7 @@ button:hover {
     
     #aside-articulo figure {
         background-color: white;
-        padding: 40px;
+        padding: 30px;
     }
     
     #aside-articulo hr {

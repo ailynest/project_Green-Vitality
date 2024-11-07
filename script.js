@@ -54,3 +54,18 @@ function actualizarPuntos() {
 
 // Inicializa el carrusel
 mostrarCarrusel(indiceActual);
+
+//flechas
+
+function mostrarCarrusel(indice) {
+    if (indice < 0) {
+        indiceActual = 0; // Limita a 0 si intenta ir a la izquierda
+    } else if (indice >= puntos.length) {
+        indiceActual = puntos.length - 1; // Limita al último índice
+    } else {
+        indiceActual = indice;
+    }
+    contenido.style.transform = `translateX(-${indiceActual * 100}%)`;
+    actualizarPuntos();
+}
+
