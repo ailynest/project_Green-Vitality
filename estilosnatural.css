@@ -15,9 +15,10 @@
 #caracteristicas {
     display:flex;
     flex-direction:row;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     flex-grow:1;
     background-color: rgb(255, 242, 225);
+    width:100%
 }
 
 #caracteristicas img {
@@ -101,7 +102,7 @@
     display: block; /* Asegura de que la imagen no tenga espacios en blanco */
     width: 100%;
     height: auto; /* Mantener la proporción de la imagen */
-    border-radius:8px
+    /*border-radius:8px*/
     
 }
 
@@ -162,7 +163,7 @@
 }
 
 .texto-producto {
-    position: absolute; /*quedará encima de la imagen*/
+    /*position: absolute; /*quedará encima de la imagen*/
     /*bottom: 10px; /*posición desde el fondo*
     /*left: 10px; /*Posición desde la izquierda*/
     top: 80%; /*Centra verticalmente*/
@@ -178,6 +179,8 @@
 .texto-producto a {
     text-decoration: none;
     color: white;  
+    display:flex;
+    justify-content: space-around;
 }
             /*efecto visual del texto de los productos*/
 .texto-producto:hover {
