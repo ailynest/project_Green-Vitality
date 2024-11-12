@@ -19,6 +19,12 @@
     text-align:center;
 }
 
+#carrusel-blog {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
 #navegacion-blog {
     display:flex;
     /*background-color: rgb(255, 255, 255);*/
@@ -33,6 +39,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
 
 }
 
@@ -41,6 +48,7 @@
     text-align:center; /*centra el texto*/
     margin: 10px; /*espacio alrededor de cada item*/
     width: 15%;
+    min-width: 100%;
     height: auto;
     /*border: 1px solid #ccc;*/
     border-radius: 8px;
@@ -50,6 +58,7 @@
     align-items: center;
     position: relative; /*Necesario para posicionar el texto*/
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
 }
 
 #navegacion-blog img {
@@ -61,9 +70,31 @@
     width: 100%;
     transition: filter 0.3s, transform 0.3s; /* Transiciones suaves del efecto del ratón*/
     /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
-}   /*0(sin desplazamiento horizontal) 4 (despl vertical)
+   /*0(sin desplazamiento horizontal) 4 (despl vertical)
     20 difuminado (cuanto más valor, más difusa)
     rgba color negro y 50% opacidad*/
+    width: 100% /* Ajusta la imagen al contenedor */
+}
+
+.boton-nav {
+    position: absolute;
+    top: 50%; /* Mantiene el botón al centro verticalmente */
+    transform: translateY(-50%); /* Ajusta el botón para que esté centrado */
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    z-index:10; /* Asegura que las flechas estén sobre el carrusel */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
 
 #navegacion-blog img:hover {
     filter: sepia(0.5); /* Aplica un filtro sepia, se puede ajustar de 0 a 1 */
