@@ -125,6 +125,7 @@ header ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    
 }
 
 .slide {
@@ -140,16 +141,17 @@ header ul{
 }
 
 .slide-cont {
-    /*position: fixed;
-    bottom: 100px;*/
+    position: absolute;
+    bottom: 10px;
     margin-left: 100px;
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
     background-color: rgb(163, 161, 161, 0.5);
     padding: 10px;
-    font-size: 50px;
+    font-size: 100px;
     font-family: fangsong;
     color: whitesmoke;  
     text-wrap: nowrap;
+<<<<<<< HEAD
 }
 
 .box {
@@ -180,4 +182,6 @@ h2 {
 width: 100%;
 padding-inline: 100 px;
 padding: 20 px;
+=======
+>>>>>>> 9a337df7caa51c96e593cff8783d75a3cffacdbc
 }

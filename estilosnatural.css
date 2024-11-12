@@ -3,7 +3,11 @@
 }
 
 #main-index h2 {
-    margin-left: 5%;
+    /*margin-left: 5%;
+    margin-right: 5%;*/
+    border-bottom: solid #397914;
+    padding-bottom: 5px;
+
 }
 
 /*CINTURÓN CARACTERÍSTICAS*/
@@ -11,9 +15,10 @@
 #caracteristicas {
     display:flex;
     flex-direction:row;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     flex-grow:1;
     background-color: rgb(255, 242, 225);
+    width:100%
 }
 
 #caracteristicas img {
@@ -27,6 +32,105 @@
     color: #A2CD63;
 }
 
+/*OTOÑO PRODUCTOS*/
+
+#otoño {
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#otoño-productos {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#otoño-productos img {
+    width:200px;
+    height: auto;
+}
+
+#otoño-productos p {
+    text-align:center;
+    color:#254d0e
+}
+
+#otoño-productos span {
+    display:block;
+    text-align:center;
+    background-color: #e78c3e;
+    color:white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#otoño-productos a {
+    text-decoration: none;
+}
+
+#otoño-productos figure {
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves del efecto del ratón*/
+}
+
+#otoño-productos figure:hover {
+    transform: scale(1.05); /*Aumenta un poco el tamaño*/
+}
+
+/*ZONA PRODUCTOS*/
+
+#zona-productos {
+    display: flex;
+    align-items: flex-start; /* Alinear ambos elementos al principio */
+    margin: 20px;
+    flex-wrap:wrap;
+}
+
+/*BLOQUE DESCUENTO*/
+
+#bloque-descuento {
+    position: relative;/* Mantener el posicionamiento del texto sobre la imagen */
+    margin-right:35px; /* Espacio entre el bloque y el carrusel */
+    margin-top:20px;
+    flex: 1 2 600px;
+    border: solid 5px #397914;
+    border-radius:8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra difusa para el efecto de desenfoque */
+}
+
+#bloque-descuento img {
+    display: block; /* Asegura de que la imagen no tenga espacios en blanco */
+    width: 100%;
+    height: auto; /* Mantener la proporción de la imagen */
+    /*border-radius:8px*/
+    
+}
+
+#texto-descuento {
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-2%, -55%); /* Ajustar la posición */
+    text-align: center; /* Alinear el texto al centro */
+    background: rgba(255, 255, 255, 0.3); /* Fondo semi-transparente para mejorar la legibilidad */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra difusa para el efecto de desenfoque */
+    max-width: 90%; /* Ancho máximo para no exceder los límites de la imagen */
+    overflow: hidden; /* Ocultar el texto que sobrepase los límites */
+}   
+
+.p1-3 {
+    color:black;
+    font-size: 20px;
+}
+
+.p2 {
+    color: #e78c3e ;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto para que se vea mejor */
+}
+
 /*CARRUSEL PRODUCTOS*/
 
 .carrusel-productos {
@@ -34,6 +138,7 @@
     width: 80%;
     margin: auto; /*centra el carrusel*/
     overflow: hidden;
+    flex: 1 1 600px;
 }
 
 .carrusel-contenido {
@@ -52,15 +157,17 @@
     width:100%;
     display:block;
     /*height:auto; /*Mantiene la proporción de la imagen*/
-    height: 200px;
+    height: 255px;
     /*object-fit:cover; /*Ajusta la imagen para que llene el contenedor sin distorsionarse*/
     object-fit:contain; /*mantiene la imagen completa sin cortarla*/
 }
 
 .texto-producto {
-    position: absolute; /*quedará encima de la imagen*/
-    bottom: 10px; /*posición desde el fondo*/
+    /*position: absolute; /*quedará encima de la imagen*/
+    /*bottom: 10px; /*posición desde el fondo*
     /*left: 10px; /*Posición desde la izquierda*/
+    top: 80%; /*Centra verticalmente*/
+    left: 15%; /*Centra horizontalmente*/
     margin:3px;
     color: white; /*Color del texto*/
     background-color: #254d0e80; /*fondo semitransparente*/
@@ -72,6 +179,8 @@
 .texto-producto a {
     text-decoration: none;
     color: white;  
+    display:flex;
+    justify-content: space-around;
 }
             /*efecto visual del texto de los productos*/
 .texto-producto:hover {
@@ -79,7 +188,7 @@
     transform: scale(1.05); /*Aumenta un poco el tamaño*/
 }
 
-.navegacion {
+.navegacion-productos {
     text-align:center;
     margin-top:10px;
 }
@@ -90,7 +199,8 @@
     height: 10px;
     background-color: gray;
     border-radius:50%;
-    margin: 0 5px;
+    margin: 5px;
+    margin-top:15px;
     cursor: pointer;
 }
 
@@ -98,10 +208,37 @@
     background-color: black;
 }
 
+del {
+    color: green
+}
+
+/*flechas de navegación*/
+
+.flecha {
+    position: absolute; /* Posiciona las flechas en relación al contenedor */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajuste para centrar correctamente */
+    font-size: 30px; /* Tamaño de la flecha */
+    color: #254d0e; /* Color de la flecha */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    z-index: 1; /* Asegúrate de que las flechas estén por encima del contenido */
+}
+
+.flecha.izquierda {
+    left: 10px; /* Espacio desde el margen izquierdo */
+}
+
+.flecha.derecha {
+    right: 10px; /* Espacio desde el margen derecho */
+}
+
 /*ENTRADAS BLOG*/
 
 #seccion-blog {
     margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #blog {
@@ -152,6 +289,40 @@
 #blog a {
     text-decoration: none;
     color: black;
+}
+
+/*MARCAS DESTACADAS*/
+
+.marcas {
+    margin: 20px;
+}
+
+.marcas figure {
+    text-align: center;
+}
+
+.marcas img {
+    width: 180px;
+    transition: opacity 0.5s; /* Efecto suave al cambiar la opacidad */
+}
+
+.marcas img:hover{
+    opacity: 0.5; /*Cambia la opacidad al pasar el ratón (50% transparencia)*/
+}
+
+#lamberts {
+    margin-left: 25px
+}
+
+/*CINTA GASTOS DE ENVIO*/
+
+#envios-gratis {
+    background-color: rgb(255, 242, 225);
+    text-align:center;
+    padding: 10px;
+    color:#4a7836;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 55px;
 }
 
 /*FOOTER*/
@@ -231,6 +402,14 @@ footer p {
 }
 
 /***NOSOTROS***/
+
+.ruta-nav {
+    margin-left: 40px
+}
+
+.ruta-nav a {
+    color: #de7315;
+}
 
 #texto-nosotros {
     margin-top: 220px;
