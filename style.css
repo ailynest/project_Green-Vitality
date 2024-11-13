@@ -133,7 +133,6 @@ header ul{
     box-sizing: border-box;
 }
 
-
 .slide img {
     width: 100%; /* Asegura que las imágenes ocupen todo el espacio de la slide */
     height: 500px;
@@ -151,4 +150,34 @@ header ul{
     font-family: fangsong;
     color: whitesmoke;  
     text-wrap: nowrap;
+}
+
+.box {
+    display: flex;
+  }
+  
+  .h2 {
+    flex: 1 1 auto;
+  }
+ /* Imágenes */
+.list-products {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+flex-direction: row;
+margin-left: 50px;
+margin-top: 7.5%;
+}
+.list-item {
+width: 25%;
+
+
+}
+.list-item > img {
+width: 200px;
+}
+h2 {
+width: 100%;
+padding-inline: 100 px;
+padding: 20 px;
 }
