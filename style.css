@@ -133,7 +133,6 @@ header ul{
     box-sizing: border-box;
 }
 
-
 .slide img {
     width: 100%; /* Asegura que las imágenes ocupen todo el espacio de la slide */
     height: 500px;
@@ -151,4 +150,52 @@ header ul{
     font-family: fangsong;
     color: whitesmoke;  
     text-wrap: nowrap;
+}
+
+.text-social {
+    font-size: 20px;
+}
+
+body{
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+ /* Mobile View */
+@media (max-width: 599px){
+    body{
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    #caracteristicas div{
+        display: none;
+    }
+   
+}
+
+/* Tablet View */
+@media (min-width: 600px) and (max-width: 1023px) {
+    body{
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+   
 }
