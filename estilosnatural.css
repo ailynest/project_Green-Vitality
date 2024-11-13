@@ -494,23 +494,3 @@ footer p {
     margin-right: 20px;
 }
 
-@media (max-width: 599px) {
-    body {
-        grid-template-areas: 
-            "header"
-            "main"
-            "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
-    }
-
-    .banner {
-        display: none;
-    }
-
-    header {
-        flex-grow: none;
-    }
-}
-
-@media ()
