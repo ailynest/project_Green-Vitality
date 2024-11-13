@@ -69,3 +69,24 @@ function mostrarCarrusel(indice) {
     actualizarPuntos();
 }
 
+
+
+//carrusel blog
+
+let currentSlide = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.tema');
+    const totalSlides = slides.length;
+
+    currentSlide += direction;
+
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    } else if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    }
+
+    const offset = -currentSlide * 100;
+    document.querySelector('.carrusel-container').style.transform = `translateX(${offset}%)`;
+}
