@@ -494,21 +494,14 @@ footer p {
     margin-right: 20px;
 }
 
-@media (max-width: 599px) {
-    body {
-        grid-template-areas: 
-            "header"
-            "main"
-            "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
+/* Mobile View */
+@media (max-width: 599px){
+    .tira-imagenes {
+        text-align:center;
     }
 
-    .banner {
-        display: none;
-    }
-
-    header {
-        flex-grow: none;
+    #titulo-nosotros {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
