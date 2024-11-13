@@ -208,3 +208,51 @@ h2{
 .rating label:hover ~ label {
     color: gold;
 }
+
+body{
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+ /* Mobile View */
+@media (max-width: 599px){
+    body{
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    #caracteristicas div{
+        display: none;
+    }
+   
+}
+
+/* Tablet View */
+@media (min-width: 600px) and (max-width: 1023px) {
+    body{
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    
+   
+}
