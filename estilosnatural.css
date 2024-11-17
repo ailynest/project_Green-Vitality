@@ -399,6 +399,7 @@ footer p {
     display:flex;
     justify-content: space-around;
     align-items: center;
+    align-items: stretch;
 }
 
 .footer-inferior {
@@ -432,7 +433,7 @@ footer p {
 }
 
 #texto-nosotros {
-    margin-top: 220px;
+    margin-top: 160px;
     margin-bottom: 100px;
 }
 
@@ -503,5 +504,13 @@ footer p {
     #titulo-nosotros {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    header {
+        position:relative;
+    }
+
+    #texto-nosotros {
+        margin-top: 20px;
     }
 }

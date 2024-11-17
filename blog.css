@@ -1,22 +1,40 @@
         /*BLOG*/
-
-#titulo-blog {
-    margin-top: 200px;
-    text-align:center;
-    background-image: url(https://staticnew-prod.topdoctors.mx/files/Image/large/8903c9459c28e402badc47fa13468d34.jpg) ;
-    color: #e3e69f;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /*sombra de texto para que se vea mejor*/
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 40px
+@font-face {
+    font-family: 'Ananda';
+    src: url('images/Ananda\ Personal\ Use.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#zona-nav-blog h2 {
+#titulo-blog {
+    margin-top: 20px;
+    text-align:center;
+    background-image: url(https://www.eluniversal.com.mx/resizer/v2/66PATSGYFRCZZN7TUSPZRHRV5I.jpg?auth=01e194cbde54f1971b3d9a5bdd316fb322b5ec1a04bd2c00790d2c82b1b9737c&smart=true&width=1100&height=666) ;
+    color: #f2f4d3;
+    text-shadow: 2px 6px 4px rgba(0, 0, 0, 1); /*sombra de texto para que se vea mejor*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background-color: #adc175;
+}
+
+header {
+    position:relative !important;
+}
+
+#zona-nav-blog h3 {
     margin-left: 40px;
     display:block;
     text-align:center;
+    font-family: "Ananda";
+    font-size: 35px;
 }
 
 #carrusel-blog {
@@ -32,7 +50,7 @@
     flex-wrap: wrap; /*los elementos se acomodan en varias líneas si es necesario*/
     justify-content: center;
     width: relative;
-    background-color:#FFFFFF;/*#254d0e;*/
+    background-color: rgb(199, 207, 146);
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 40px;
@@ -47,13 +65,13 @@
     display:flex;
     text-align:center; /*centra el texto*/
     margin: 10px; /*espacio alrededor de cada item*/
-    width: 15%;
+    /*width: 15%;*/
     min-width: 100%;
     height: auto;
     /*border: 1px solid #ccc;*/
     border-radius: 8px;
     overflow: hidden; /*oculta cualquier contenido que se desborde*/
-    min-width: 200px;
+    min-width: 10em;
     /*transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves del efecto del ratón*/
     align-items: center;
     position: relative; /*Necesario para posicionar el texto*/
@@ -63,37 +81,15 @@
 
 #navegacion-blog img {
     display:block; /*Para que no sobresalga el contenedor*/
-    width: 150px;
-    height: 150px;
+    margin: auto; /*centra la imagen cuando hay display:block*/
+    max-width: 100%;/*asegura que la imagen no exceda el contenedor*/
+    object-fit: cover; /*mantiene la relación de aspecto y recorta si es necesario*/
+    width: 10em;
+    height: 8em;
     border-radius: 8px;
-    object-fit: cover;  /*mantiene la relación de aspecto y recorta si es necesario*/
-    width: 100%;
     transition: filter 0.3s, transform 0.3s; /* Transiciones suaves del efecto del ratón*/
-    /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
-   /*0(sin desplazamiento horizontal) 4 (despl vertical)
-    20 difuminado (cuanto más valor, más difusa)
-    rgba color negro y 50% opacidad*/
-    width: 100% /* Ajusta la imagen al contenedor */
-}
-
-.boton-nav {
-    position: absolute;
-    top: 50%; /* Mantiene el botón al centro verticalmente */
-    transform: translateY(-50%); /* Ajusta el botón para que esté centrado */
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    padding: 10px;
-    z-index:10; /* Asegura que las flechas estén sobre el carrusel */
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
+    /*width: 100%; /* Ajusta la imagen al contenedor */
+    border:#126952 solid 5px;
 }
 
 #navegacion-blog img:hover {
@@ -105,14 +101,16 @@
     top: 50%; /*Centra verticalmente*/
     left: 50%; /*Centra horizontalmente*/
     transform: translate(-50%, -50%); /* Ajusta la posición para que esté centrado */
-    color: #50483f; /* Color del texto */
+    color: rgb(66 60 54);; /* Color del texto */
     padding: 5px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: center;
     z-index: 2; /* Asegura de que el texto esté encima de la imagen */
-    background-color: rgba(243, 229, 171, 0.5); /* Fondo vainilla translúcido */
+    background-color: rgba(243, 229, 171, 0.6); /* Fondo vainilla translúcido */
     font-weight: bold;
+    overflow: hidden;
+
 }
 
 .fondo-claro {
@@ -126,6 +124,8 @@
 
 #titulo-posts {
     text-align:center;
+    font-family: "Ananda";
+    font-size: 35px;
 }
 
 .article-blog {
@@ -136,7 +136,7 @@
     margin-left:5%;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /*efecto sombra*/
-    border-left: 5px solid #6ab04c; /* Borde verde a la izquierda. queda bien?*/
+    border-left: 8px solid #126952; /* Borde verde a la izquierda. queda bien?*/
 }
 
 time {
@@ -145,27 +145,31 @@ time {
 }
 
 .articulo-contenido {
-    display: flex;
+    display: grid;
     align-items:flex-start;
-    flex-wrap: wrap; /***no reacciona**/
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    grid-template-areas:
+        "foto texto"
 }
 
 .imagen-articulo {
     max-width: 100%;/*asegura que la imagen no exceda el contenedor*/
-    width: 40%;
     /*width: 200px;
     height: 200px;*/
     object-fit: cover; /*mantiene la relación de aspecto y recorta si es necesario*/
     border-radius: 5px;
     margin-right: 20px;
+    grid-area: foto;
 }
 
 .articulo-texto {
     text-align:justify;
     flex: 1; /* Permite que el texto ocupe el espacio restante */
+    grid-area: texto;
 }
 
-.article-blog h2 {
+.article-blog h3 {
     margin-top: 0;
 }
 
@@ -220,13 +224,14 @@ input {
 }
 
 .proteccion-datos {
-    display: flex;
+    /*display: flex;
     align-items: center; /*Corrige el tamaño del cuadrado*/
-    /*margin: 10px 0;*/
-}
-
-input[type="checkbox"] {
-    margin-right: 10px; /* Espacio entre el checkbox y el label */
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+    align-items: end;
+    justify-content: start;
 }
 
 form a {
@@ -245,6 +250,7 @@ button {
     border: none; /* Sin borde */
     border-radius: 4px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-top: 1em;
 }
 
 button:hover {
@@ -254,10 +260,6 @@ button:hover {
 
     /******ENTRADA BLOG******/
 
-    body {
-        background-color: #ced08a;
-    }
-    
     #main-resfriado{
         margin-top: 185px;
 
@@ -291,9 +293,12 @@ button:hover {
         margin-bottom: 45px;
         /*color:#2e5b1b;*/ /*lo siguiente es añadido para foto de fondo*/
         background-image: url(https://hifasdaterra.com/wp-content/uploads/2023/11/header-post-remedios-naturales-gripe.jpg);
+        background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen en el contenedor */
         padding:60px;
         color:white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto para que se vea mejor */
+        text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.8);
     }
     
     .contenido h3 {
@@ -433,23 +438,32 @@ button:hover {
     /**/
 
 /* Mobile View */
-@media (max-width: 599px){
-    .contenido {
-        display:grid;
+@media (max-width: 699px){
+    body {
+        font-size: 1rem;
+    }
+
+    .articulo-contenido {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
         grid-template-areas:
-            "articulo"
-            "aside";
+            "foto"
+            "texto";
     }
 
-    #articulo-unico {
-        grid-area: articulo;
-        margin-right: 0;
-    }
-
-    #aside-articulo {
-        grid-area: aside;
-    }
-    .contenido h2 {
-        padding:30px;
+    .texto-navegacion {
+        padding: 15px;
+        font-size: 20px;
+        background-color: rgba(243, 229, 171, 0.6); /* Fondo vainilla translúcido */
     }
 }
+
+  /* Tablet View */
+  @media (min-width: 700px) and (max-width: 992px) {
+    .articulo-contenido {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "foto texto";
+    }
+  }
